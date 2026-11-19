@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_beranda"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/nav_beranda" />
+    <item
+        android:id="@+id/menu_daftar"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/nav_daftar" />
+    <item
+        android:id="@+id/menu_pengaturan"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/nav_pengaturan" />
+</menu>

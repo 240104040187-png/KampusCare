@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Widget.KampusCare.Title"
+            android:text="@string/judul_pengaturan" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/kc_surface"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/kc_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Widget.KampusCare.Subtitle"
+                    android:text="@string/pengaturan_urutan_judul" />
+
+                <TextView
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/pengaturan_urutan_sub" />
+
+                <RadioGroup
+                    android:id="@+id/rgUrutan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rbTerbaru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/opsi_terbaru" />
+
+                    <RadioButton
+                        android:id="@+id/rbTerlama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/opsi_terlama" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvStatusPreferensi"
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/kc_teal_dark"
+                    android:textStyle="bold"
+                    android:accessibilityLiveRegion="polite" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/kc_surface"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/kc_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Widget.KampusCare.Subtitle"
+                    android:text="@string/identitas_judul" />
+
+                <TextView
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/dev_nama" />
+
+                <TextView
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/dev_nim" />
+
+                <TextView
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/dev_kelas" />
+
+                <TextView
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/dev_matkul" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/kc_surface"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/kc_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/Widget.KampusCare.Subtitle"
+                    android:text="@string/uji_terkontrol_judul" />
+
+                <TextView
+                    style="@style/Widget.KampusCare.Body"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/uji_terkontrol_sub" />
+
+                <Button
+                    android:id="@+id/btnUjiRincianInvalid"
+                    style="@style/Widget.KampusCare.OutlinedButton"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tombol_uji_rincian_invalid" />
+
+                <Button
+                    android:id="@+id/btnUjiFormInvalid"
+                    style="@style/Widget.KampusCare.OutlinedButton"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/tombol_uji_form_invalid" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

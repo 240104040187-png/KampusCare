@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.KampusCare" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/kc_teal</item>
+        <item name="colorOnPrimary">@color/kc_white</item>
+        <item name="colorPrimaryContainer">@color/kc_teal_soft</item>
+        <item name="colorOnPrimaryContainer">@color/kc_navy</item>
+        <item name="android:windowBackground">@color/kc_bg</item>
+    </style>
+</resources>

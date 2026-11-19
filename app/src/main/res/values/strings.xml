@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KampusCare</string>
+    <string name="tagline_beranda">Catat dan pantau temuan masalah fasilitas kampus langsung di perangkat Anda.</string>
+    <string name="status_lokal">Tersimpan di perangkat</string>
+
+    <!-- Navigasi -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_daftar">Daftar</string>
+    <string name="nav_pengaturan">Pengaturan</string>
+
+    <!-- Beranda -->
+    <string name="ringkasan_judul">Ringkasan Catatan Lokal</string>
+    <string name="total_catatan_label">Total catatan tersimpan</string>
+    <string name="tambah_catatan">Tambah Catatan</string>
+    <string name="lihat_daftar">Lihat Semua Catatan</string>
+    <string name="panduan_singkat_judul">Alur Penggunaan</string>
+    <string name="panduan_singkat_isi">1. Tekan Tambah Catatan untuk mencatat temuan fasilitas.\n2. Buka Daftar untuk melihat, menyunting, atau menghapus catatan.\n3. Atur urutan tampilan pada menu Pengaturan.</string>
+
+    <!-- Daftar -->
+    <string name="judul_daftar">Daftar Catatan Fasilitas</string>
+    <string name="memuat_data">Memuat data catatan...</string>
+    <string name="daftar_kosong_judul">Belum ada catatan</string>
+    <string name="daftar_kosong_sub">Tambahkan temuan fasilitas kampus pertama Anda agar tersimpan di perangkat.</string>
+    <string name="jumlah_catatan_format">%1$d catatan ditemukan</string>
+    <string name="urutan_terbaru_label">Urutan aktif: Terbaru lebih dahulu</string>
+    <string name="urutan_terlama_label">Urutan aktif: Terlama lebih dahulu</string>
+    <string name="item_meta_format">ID #%1$d • %2$s</string>
+    <string name="item_waktu_format">Dibuat: %1$s</string>
+    <string name="item_ally_format">%1$s. Kategori %2$s. Lokasi %3$s. Dibuat %4$s. Ketuk untuk rincian.</string>
+
+    <!-- Rincian -->
+    <string name="judul_rincian">Rincian Catatan</string>
+    <string name="label_id_catatan">ID Catatan: #%1$d</string>
+    <string name="ubah_catatan">Ubah Catatan</string>
+    <string name="hapus_catatan">Hapus Catatan</string>
+    <string name="kembali">Kembali</string>
+    <string name="konfirmasi_hapus">Hapus catatan ini dari perangkat? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="ya_hapus">Ya, Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="catatan_tidak_ditemukan">Catatan tidak ditemukan atau sudah dihapus.</string>
+
+    <!-- Formulir -->
+    <string name="judul_form_tambah">Tambah Catatan Baru</string>
+    <string name="judul_form_ubah">Ubah Catatan</string>
+    <string name="info_form_tambah">Lengkapi seluruh kolom temuan fasilitas di bawah ini.</string>
+    <string name="info_form_ubah">Perbarui data temuan. ID dan waktu pembuatan awal tetap dipertahankan.</string>
+    <string name="label_judul">Judul Temuan (5–100 karakter) *</string>
+    <string name="hint_judul">Contoh: Lampu koridor lantai 2 padam</string>
+    <string name="label_kategori">Kategori Fasilitas *</string>
+    <string name="label_lokasi">Lokasi Temuan (3–80 karakter) *</string>
+    <string name="hint_lokasi">Contoh: Gedung Kuliah A Ruang 204</string>
+    <string name="label_deskripsi">Deskripsi Masalah (20–500 karakter) *</string>
+    <string name="hint_deskripsi">Jelaskan kondisi kerusakan atau gangguan secara jelas (minimal 20 karakter).</string>
+    <string name="simpan_perangkat">Simpan ke Perangkat</string>
+    <string name="error_judul">Judul wajib diisi 5 hingga 100 karakter.</string>
+    <string name="error_kategori">Pilih kategori fasilitas yang valid.</string>
+    <string name="error_lokasi">Lokasi wajib diisi 3 hingga 80 karakter.</string>
+    <string name="error_deskripsi">Deskripsi wajib diisi 20 hingga 500 karakter.</string>
+
+    <!-- Pengaturan -->
+    <string name="judul_pengaturan">Pengaturan &amp; Info</string>
+    <string name="pengaturan_urutan_judul">Urutan Daftar Catatan</string>
+    <string name="pengaturan_urutan_sub">Pilihan urutan disimpan secara lokal menggunakan SharedPreferences.</string>
+    <string name="opsi_terbaru">Terbaru lebih dahulu (waktu pembuatan terbaru)</string>
+    <string name="opsi_terlama">Terlama lebih dahulu (waktu pembuatan terlama)</string>
+    <string name="identitas_judul">Identitas Pengembang</string>
+    <string name="dev_nama">Nama: Wahyu Maarif</string>
+    <string name="dev_nim">NIM: 240104040187</string>
+    <string name="dev_kelas">Kelas: TI 24 B</string>
+    <string name="dev_matkul">Mata Kuliah: Pemrograman Mobile (UTS)</string>
+    <string name="uji_terkontrol_judul">Pengujian Terkontrol (U15)</string>
+    <string name="uji_terkontrol_sub">Buka ID tidak valid (-99) untuk memastikan penanganan error berjalan aman tanpa crash.</string>
+    <string name="tombol_uji_rincian_invalid">Uji Rincian ID Tidak Valid (-99)</string>
+    <string name="tombol_uji_form_invalid">Uji Form ID Tidak Valid (-99)</string>
+
+    <string-array name="kategori_fasilitas">
+        <item>Pilih kategori fasilitas</item>
+        <item>Penerangan</item>
+        <item>Kebersihan</item>
+        <item>Perabot</item>
+        <item>Jaringan</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>

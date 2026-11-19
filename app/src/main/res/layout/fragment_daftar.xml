@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            style="@style/Widget.KampusCare.Title"
+            android:text="@string/judul_daftar" />
+
+        <TextView
+            android:id="@+id/tvInfoUrutan"
+            style="@style/Widget.KampusCare.Body"
+            android:layout_marginTop="4dp"
+            android:text="@string/urutan_terbaru_label"
+            android:textColor="@color/kc_teal_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatusDaftar"
+            style="@style/Widget.KampusCare.Body"
+            android:layout_marginTop="2dp"
+            android:accessibilityLiveRegion="polite" />
+
+        <TextView
+            android:id="@+id/tvFeedbackDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_badge_teal"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:textColor="@color/kc_teal_dark"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:accessibilityLiveRegion="polite" />
+
+        <Button
+            android:id="@+id/btnTambahDaftar"
+            style="@style/Widget.KampusCare.PrimaryButton"
+            android:layout_marginTop="10dp"
+            android:text="@string/tambah_catatan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutKosong"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Widget.KampusCare.Subtitle"
+            android:gravity="center"
+            android:text="@string/daftar_kosong_judul" />
+
+        <TextView
+            style="@style/Widget.KampusCare.Body"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/daftar_kosong_sub" />
+
+        <Button
+            android:id="@+id/btnTambahKosong"
+            style="@style/Widget.KampusCare.PrimaryButton"
+            android:layout_marginTop="16dp"
+            android:text="@string/tambah_catatan" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp" />
+</LinearLayout>
